@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: xrp-fastapi
+    env: docker
+    plan: free
+    autoDeploy: true
+    envVars:
+      - key: MODEL_PATH
+        value: models/xrp_xgb_model.joblib
